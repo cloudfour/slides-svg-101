@@ -166,7 +166,7 @@ body {
 
 	word-wrap: break-word;
 
-	box-shadow: 0px 0px 6px rgba(0,0,0,0.3);
+	// box-shadow: 0px 0px 6px rgba(0,0,0,0.3);
 }
 .reveal code {
 	font-family: monospace;
@@ -174,12 +174,12 @@ body {
 
 .reveal pre code {
 	display: block;
-	padding: 5px;
+	padding: 1em;
 	overflow: auto;
 	max-height: 400px;
 	word-wrap: normal;
-	background: #3F3F3F;
-	color: #DCDCDC;
+	// background: #3F3F3F;
+	// color: #DCDCDC;
 }
 
 .reveal table {
@@ -345,5 +345,3 @@ body {
 .reveal .slide-number {
 	color: $linkColor;
 }
-
-
