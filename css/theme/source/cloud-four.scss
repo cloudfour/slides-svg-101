@@ -48,6 +48,7 @@ section.has-dark-background {
 // ---------------------------------------------
 
 // Utilities -----------------------------------
+@import "../template/utils/align";
 @import "../template/utils/display";
 @import "../template/utils/layout";
 @import "../template/utils/size";
@@ -69,4 +70,9 @@ section.has-dark-background {
 .u-marginEnds {
 	margin-bottom: 1.5em !important;
 	margin-top: 1.5em !important;
+}
+
+.u-marginSides {
+	margin-right: 1em !important;
+	margin-left: 1em !important;
 }

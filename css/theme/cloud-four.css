@@ -264,6 +264,22 @@ body {
   color: #5A7BDD; }
 
 /**
+ * Vertical alignment utilities
+ * Depends on an appropriate `display` value.
+ */
+.u-alignBaseline {
+  vertical-align: baseline !important; }
+
+.u-alignBottom {
+  vertical-align: bottom !important; }
+
+.u-alignMiddle {
+  vertical-align: middle !important; }
+
+.u-alignTop {
+  vertical-align: top !important; }
+
+/**
  * Display-type utilities
  */
 .u-block {
@@ -499,3 +515,7 @@ body {
 .u-marginEnds {
   margin-bottom: 1.5em !important;
   margin-top: 1.5em !important; }
+
+.u-marginSides {
+  margin-right: 1em !important;
+  margin-left: 1em !important; }
