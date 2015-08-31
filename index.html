@@ -53,7 +53,7 @@
 						</div>
 						<div class="u-size1of2 u-floatRight">
 							<h3>SVG</h3>
-							<svg class="u-blockCenter u-marginEnds" width="240" height="240" viewbox="0 0 24 24">
+							<svg class="u-blockCenter u-marginEnds" width="240" height="240" viewBox="0 0 24 24">
 								<circle fill="#F26941" cx="12" cy="12" r="12"/>
 							</svg>
 						</div>
@@ -62,7 +62,7 @@
 &lt;img width="240" height="240"
   src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAABEklEQVR42r1WSw6CMBDlJP4uY1rQrZ8buDKENnAh5QpyEg+gJ7AIavzNM8TGhQ0SxsVLoZ15r0M7M3jBIvyKIg46uZKJ0TIzSu5oPNG7ybXYGiU2WCujUd/F4SAWa6PFNdfy4QIJ3WALn1oCR+2PyeEA51+AyCjCmVOAdrzEjuDQBCRwJ4SfApZ8AgPr0FwEXFbAHqaBQRsAFzjfAjS5wkK7EOlLoIhkt/l3d98ucNPu/RgTHAC3h4ThEgA3bs+eSwDcHtKfMYIzu8BfPlHGecj817SMhz2uRAN3VSpEylEq/lfsABP507bKNbgYG46I+FqmEvPaTR+HVCca2MDW0fTr/bYgK2m8ANVzhrUy8Qcujid2yGIBaj5olQAAAABJRU5ErkJggg=="&gt;
 
-&lt;svg width="240" height="240" viewbox="0 0 24 24"&gt;
+&lt;svg width="240" height="240" viewBox="0 0 24 24"&gt;
   &lt;circle fill="#F26941" cx="12" cy="12" r="12"/&gt;
 &lt;/svg&gt;
 					</code></pre>
@@ -117,8 +117,79 @@
 					</div>
 
 					<p>
-						<small>(Even/especially if you exported from one of the aforementioned apps.)</small>
+						<small>(Even if you exported from one of the aforementioned apps!)</small>
 					</p>
+				</section>
+
+				<section>
+					<h2>Anatomy of an SVG</h2>
+				</section>
+
+				<section>
+					<h3>Container with viewBox</h3>
+					<p>
+						<small>The <code>viewBox</code> attribute defines the coordinate system.</small>
+					</p>
+					<pre><code class="language-html" data-trim>
+<svg viewBox="0 0 100 100"></svg>
+					</code></pre>
+					<p>
+						<small>Values are minimum x and y coordinates, then width and height.</small>
+					</p>
+				</section>
+
+				<section>
+					<h3>viewBox examples</h3>
+					<svg class="u-borders" width="100" height="100" viewBox="0 0 100 100">
+						<circle fill="#F26941" cx="50" cy="50" r="50"/>
+					</svg>
+					<svg class="u-borders" width="100" height="100" viewBox="0 0 200 200">
+						<circle fill="#F26941" cx="50" cy="50" r="50"/>
+					</svg>
+					<svg class="u-borders" width="100" height="100" viewBox="0 0 50 50">
+						<circle fill="#F26941" cx="50" cy="50" r="50"/>
+					</svg>
+					<svg class="u-borders" width="100" height="100" viewBox="-50 -50 100 100">
+						<circle fill="#F26941" cx="50" cy="50" r="50"/>
+					</svg>
+					<svg class="u-borders" width="100" height="100" viewBox="-25 50 75 50">
+						<circle fill="#F26941" cx="50" cy="50" r="50"/>
+					</svg>
+					<pre><code class="language-html" data-trim>
+&lt;!-- Normal:   --&gt; <svg viewBox="0 0 100 100"></svg>
+&lt;!-- Larger:   --&gt; <svg viewBox="0 0 200 200"></svg>
+&lt;!-- Smaller:  --&gt; <svg viewBox="0 0 50 50"></svg>
+&lt;!-- Negative: --&gt; <svg viewBox="-50 -50 100 100"></svg>
+&lt;!-- Mixed:    --&gt; <svg viewBox="-25 50 75 50"></svg>
+					</code></pre>
+				</section>
+
+				<section>
+					<h3>Optional: Dimensions</h3>
+					<p>
+						<small>By default, SVGs will attempt to fill their container regardless of <code>viewBox</code>. You can specify dimensions to make the asset behave more like an <code>img</code> would.</small>
+					</p>
+					<pre><code class="language-html" data-trim>
+<svg width="100" height="100" viewBox="0 0 100 100"></svg>
+					</code></pre>
+				</section>
+
+				<section>
+					<h3>Basic Shapes</h3>
+					<svg width="480" height="150" viewBox="0 0 320 100">
+						<rect fill="#5A7BDD" x="0" cy="0" width="100" height="100" rx="12" ry="12"/>
+						<circle fill="#F26941" cx="160" cy="50" r="50"/>
+						<line x1="230" y1="90" x2="310" y2="10" stroke="#0F1C3F"  stroke-width="10" stroke-linecap="round"/>
+					</svg>
+					<pre><code class="language-html" data-trim>
+&lt;svg viewBox="0 0 320 100"&gt;
+  &lt;rect fill="#5A7BDD" x="0" y="0" width="100" height="100"
+    rx="12" ry="12"/&gt;
+  &lt;circle fill="#F26941" cx="160" cy="50" r="50"/&gt;
+  &lt;line x1="230" y1="90" x2="310" y2="10"
+    stroke="#0F1C3F" stroke-width="10" stroke-linecap="round"/&gt;
+&lt;/svg&gt;
+					</code></pre>
 				</section>
 
 				<section data-background="#111">
