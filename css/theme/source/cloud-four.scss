@@ -46,3 +46,27 @@ section.has-dark-background {
 // Theme template ------------------------------
 @import "../template/theme";
 // ---------------------------------------------
+
+// Utilities -----------------------------------
+@import "../template/utils/display";
+@import "../template/utils/layout";
+@import "../template/utils/size";
+// ---------------------------------------------
+
+.u-imgUnstyled {
+	background: transparent !important;
+	border-width: 0 !important;
+	box-shadow: none !important;
+	margin: 0 !important;
+}
+
+.u-blockCenter {
+	display: block !important;
+	margin-left: auto !important;
+	margin-right: auto !important;
+}
+
+.u-marginEnds {
+	margin-bottom: 1.5em !important;
+	margin-top: 1.5em !important;
+}
