@@ -92,3 +92,53 @@ section.has-dark-background {
 .u-borders {
 	border: 4px solid $mainColor;
 }
+
+// Override table styles
+
+.reveal table {
+	// margin: auto;
+	// border-collapse: collapse;
+	// border-spacing: 0;
+	font-size: 30px;
+}
+
+.reveal table th {
+	font-weight: normal;
+}
+
+.reveal table th,
+.reveal table td {
+	text-align: center;
+	border-bottom: 0;
+	padding: 0.5em;
+}
+
+.reveal table thead th {
+	border-bottom: 4px solid;
+	font-weight: bold;
+}
+
+.reveal table tbody th:first-child {
+	text-align: left;
+}
+
+.reveal table tbody tr:nth-child(odd) {
+	background-color: lighten(#DBE5EA, 5%);
+}
+
+.reveal table td {
+	&.success,
+	&.danger,
+	&.warning {
+		color: rgba(#000,0.66);
+	}
+	&.success {
+		background: rgba(#2ECC40, 0.375);
+	}
+	&.danger {
+		background: rgba(#FF4136, 0.375);
+	}
+	&.warning {
+		background: rgba(#FFDC00, 0.375);
+	}
+}

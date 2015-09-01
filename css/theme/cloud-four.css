@@ -531,3 +531,33 @@ body {
 
 .u-borders {
   border: 4px solid #5b6273; }
+
+.reveal table {
+  font-size: 30px; }
+
+.reveal table th {
+  font-weight: normal; }
+
+.reveal table th, .reveal table td {
+  text-align: center;
+  border-bottom: 0;
+  padding: 0.5em; }
+
+.reveal table thead th {
+  border-bottom: 4px solid;
+  font-weight: bold; }
+
+.reveal table tbody th:first-child {
+  text-align: left; }
+
+.reveal table tbody tr:nth-child(odd) {
+  background-color: #ebf1f3; }
+
+.reveal table td.success, .reveal table td.danger, .reveal table td.warning {
+  color: rgba(0, 0, 0, 0.66); }
+.reveal table td.success {
+  background: rgba(46, 204, 64, 0.375); }
+.reveal table td.danger {
+  background: rgba(255, 65, 54, 0.375); }
+.reveal table td.warning {
+  background: rgba(255, 220, 0, 0.375); }
