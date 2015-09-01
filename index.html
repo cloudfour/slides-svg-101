@@ -406,70 +406,107 @@
 					</iframe>
 				</section>
 
-				<section data-background="#5A7BDD">
-					<h2>Odds and ends</h2>
+				<section>
+					<section data-background="#5A7BDD">
+						<h2>Odds and ends</h2>
+					</section>
+
+					<section>
+						<h3>Embedding techniques</h3>
+						<table>
+							<thead>
+								<tr>
+									<th></th>
+									<th scope="col"><code>&lt;svg&gt;</code></th>
+									<th scope="col"><code>&lt;object&gt;</code></th>
+									<th scope="col"><code>&lt;img&gt;</code></th>
+									<th scope="col">CSS</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<th scope="row">Inherit page CSS</th>
+									<td class="success">Yes</td>
+									<td class="danger">No</td>
+									<td class="danger">No</td>
+									<td class="danger">No</td>
+								</tr>
+								<tr>
+									<th scope="row">JavaScript</th>
+									<td class="success">Yes</td>
+									<td class="success">Yes</td>
+									<td class="danger">No</td>
+									<td class="danger">No</td>
+								</tr>
+								<tr>
+									<th scope="row">Sprites</th>
+									<td class="success">Yes</td>
+									<td class="danger">No</td>
+									<td class="danger">No</td>
+									<td class="warning">Sort of</td>
+								</tr>
+								<tr>
+									<th scope="row">Accessibility</th>
+									<td class="success">Excellent</td>
+									<td class="warning">Limited</td>
+									<td class="warning">Limited</td>
+									<td class="danger">Poor</td>
+								</tr>
+								<tr>
+									<th scope="row">Cacheability</th>
+									<td class="warning">Limited</td>
+									<td class="success">Excellent</td>
+									<td class="success">Excellent</td>
+									<td class="success">Excellent</td>
+								</tr>
+								<tr>
+									<th scope="row">Fallback</th>
+									<td class="success"><code>&lt;image&gt;</code></td>
+									<td class="success">Inner content</td>
+									<td class="success"><code>&lt;picture&gt;</code></td>
+									<td class="danger">JavaScript</td>
+								</tr>
+							</tbody>
+						</table>
+					</section>
+
+					<section>
+						<h3>Further reading</h3>
+						<ul>
+							<li>
+								CSS-Tricks&rsquo; now-classic <a href="https://css-tricks.com/using-svg/">
+									Using SVG &rarr;
+								</a>
+							</li>
+							<li>
+								WebPlatform&rsquo;s <a href="https://docs.webplatform.org/wiki/svg/tutorials/smarter_svg_overview">
+									Smarter SVG Overview &rarr;
+								</a>
+							</li>
+							<li>
+								<a href="https://svgontheweb.com/">
+									A Practical Guide to SVGs on the web
+								</a>
+							</li>
+							<li>
+								<a href="http://sarasoueidan.com/tags/svg/index.html">
+									Sara Soueidan&rsquo;s SVG articles &rarr;
+								</a>
+							</li>
+							<li>
+								<a href="https://developer.mozilla.org/en-US/docs/Web/SVG">
+									Mozilla&rsquo;s SVG reference &rarr;
+								</a>
+							</li>
+						</ul>
+					</section>
+				</section>
+
+				<section data-background="#111" style="text-align:right">
+					<h2>Thank you!</h2>
 				</section>
 
 				<section>
-					<h3>Embedding techniques</h3>
-					<table>
-						<thead>
-							<tr>
-								<th></th>
-								<th scope="col"><code>&lt;svg&gt;</code></th>
-								<th scope="col"><code>&lt;object&gt;</code></th>
-								<th scope="col"><code>&lt;img&gt;</code></th>
-								<th scope="col">CSS</th>
-							</tr>
-						</thead>
-						<tbody>
-							<tr>
-								<th scope="row">Inherit page CSS</th>
-								<td class="success">Yes</td>
-								<td class="danger">No</td>
-								<td class="danger">No</td>
-								<td class="danger">No</td>
-							</tr>
-							<tr>
-								<th scope="row">JavaScript</th>
-								<td class="success">Yes</td>
-								<td class="success">Yes</td>
-								<td class="danger">No</td>
-								<td class="danger">No</td>
-							</tr>
-							<tr>
-								<th scope="row">Sprites</th>
-								<td class="success">Yes</td>
-								<td class="danger">No</td>
-								<td class="danger">No</td>
-								<td class="warning">Sort of</td>
-							</tr>
-							<tr>
-								<th scope="row">Accessibility</th>
-								<td class="success">Excellent</td>
-								<td class="warning">Limited</td>
-								<td class="warning">Limited</td>
-								<td class="danger">Poor</td>
-							</tr>
-							<tr>
-								<th scope="row">Cacheability</th>
-								<td class="warning">Limited</td>
-								<td class="success">Excellent</td>
-								<td class="success">Excellent</td>
-								<td class="success">Excellent</td>
-							</tr>
-							<tr>
-								<th scope="row">Fallback</th>
-								<td class="success"><code>&lt;image&gt;</code></td>
-								<td class="success">Inner content</td>
-								<td class="success"><code>&lt;picture&gt;</code></td>
-								<td class="danger">JavaScript</td>
-							</tr>
-						</tbody>
-					</table>
-				</section>
-
-				<section data-background="#111">
 					<h1>¯\_(ツ)_/¯</h1>
 					<p>Everything past this slide is default reveal.js content we're keeping around for our reference.</p>
 				</section>
