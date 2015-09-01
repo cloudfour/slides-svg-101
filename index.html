@@ -294,6 +294,36 @@
 &lt;/svg&gt;
 					</code></pre>
 				</section>
+				<section>
+					<h3>&hellip;and a zillion other things!</h3>
+					<p>
+						<small>Elements can be re-used, transformed, filtered, masked and animated as browser support allows.</small>
+					</p>
+					<svg width="480" height="480" viewbox="0 0 480 480">
+						<defs>
+							<filter id="filter">
+								<feGaussianBlur in="SourceGraphic" stdDeviation="5" />
+							</filter>
+							<image id="image" xlink:href="http://placeimg.com/480/480/animals" height="480" width="480"/>
+							<mask id="mask" maskUnits="userSpaceOnUse" x="0" y="0" width="480" height="480">
+								<text x="240" y="240" text-anchor="middle" dominant-baseline="central" font-size="100" font-weight="bold" fill="white" style="text-transform:uppercase">
+									Animals!
+									<animateTransform
+										attributeName="transform"
+										attributeType="XML"
+										type="rotate"
+										from="0 240 240"
+										to="360 240 240"
+										dur="5s"
+										repeatCount="indefinite"/>
+								</text>
+							</mask>
+						</defs>
+						<use xlink:href="#image" filter="url(#filter)"/>
+						<rect x="-5" y="-5" width="490" height="490" fill="white" opacity="0.66"/>
+						<use xlink:href="#image" mask="url(#mask)"/>
+					</svg>
+				</section>
 
 				<section data-background="#111">
 					<h1>¯\_(ツ)_/¯</h1>
