@@ -265,6 +265,36 @@
 					</code></pre>
 				</section>
 
+				<section>
+					<h3>Text, images and links</h3>
+					<svg width="480" height="240" viewbox="0 0 480 240">
+						<style type="text/css">
+							.demo-text-simple {
+								fill: #FFFFFF;
+								font-family: 'Source Sans Pro', sans-serif;
+								font-size: 100px;
+								font-weight: bold;
+								text-transform: uppercase;
+							}
+						</style>
+						<a xlink:href="http://cuteoverload.com" target="_blank">
+							<image xlink:href="http://placeimg.com/480/240/animals" x="0" y="0" height="240" width="480"/>
+							<text class="demo-text-simple" x="240" y="120" text-anchor="middle" dominant-baseline="central" transform="rotate(-22 240 120)">
+								Animals!
+							</text>
+						</a>
+					</svg>
+					<pre><code class="language-html" data-trim>
+&lt;svg viewbox="0 0 480 240"&gt;
+  &lt;style type="text/css"&gt; /* text styles */ &lt;/style&gt;
+  &lt;a xlink:href="http://cuteoverload.com" target="_blank"&gt;
+    &lt;image xlink:href="http://placeimg.com/480/240/animals" x="0" y="0" height="240" width="480"/&gt;
+    &lt;text x="240" y="120" text-anchor="middle" dominant-baseline="central" transform="rotate(-22 240 120)"&gt;Animals!&lt;/text&gt;
+  &lt;/a&gt;
+&lt;/svg&gt;
+					</code></pre>
+				</section>
+
 				<section data-background="#111">
 					<h1>¯\_(ツ)_/¯</h1>
 					<p>Everything past this slide is default reveal.js content we're keeping around for our reference.</p>
