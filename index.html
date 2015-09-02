@@ -132,89 +132,91 @@
 				</section>
 
 				<section>
-					<h3>Container with viewBox</h3>
-					<p>
-						<small>The <code>viewBox</code> attribute defines the coordinate system.</small>
-					</p>
-					<pre><code class="language-html" data-trim>
-<svg viewBox="0 0 100 100"></svg>
-					</code></pre>
-					<p>
-						<small>Values are minimum x and y coordinates, then width and height.</small>
-					</p>
-				</section>
+					<section>
+						<h3>Container with viewBox</h3>
+						<p>
+							<small>The <code>viewBox</code> attribute defines the coordinate system.</small>
+						</p>
+						<pre><code class="language-html" data-trim>
+	<svg viewBox="0 0 100 100"></svg>
+						</code></pre>
+						<p>
+							<small>Values are minimum x and y coordinates, then width and height.</small>
+						</p>
+					</section>
 
-				<section>
-					<h3>viewBox examples</h3>
-					<svg class="u-borders" width="100" height="100" viewBox="0 0 100 100">
-						<circle fill="#F26941" cx="50" cy="50" r="50"/>
-					</svg>
-					<svg class="u-borders" width="100" height="100" viewBox="0 0 200 200">
-						<circle fill="#F26941" cx="50" cy="50" r="50"/>
-					</svg>
-					<svg class="u-borders" width="100" height="100" viewBox="0 0 50 50">
-						<circle fill="#F26941" cx="50" cy="50" r="50"/>
-					</svg>
-					<svg class="u-borders" width="100" height="100" viewBox="-50 -50 100 100">
-						<circle fill="#F26941" cx="50" cy="50" r="50"/>
-					</svg>
-					<svg class="u-borders" width="100" height="100" viewBox="-25 50 75 50">
-						<circle fill="#F26941" cx="50" cy="50" r="50"/>
-					</svg>
-					<pre><code class="language-html" data-trim>
+					<section>
+						<h3>viewBox examples</h3>
+						<svg class="u-borders" width="100" height="100" viewBox="0 0 100 100">
+							<circle fill="#F26941" cx="50" cy="50" r="50"/>
+						</svg>
+						<svg class="u-borders" width="100" height="100" viewBox="0 0 200 200">
+							<circle fill="#F26941" cx="50" cy="50" r="50"/>
+						</svg>
+						<svg class="u-borders" width="100" height="100" viewBox="0 0 50 50">
+							<circle fill="#F26941" cx="50" cy="50" r="50"/>
+						</svg>
+						<svg class="u-borders" width="100" height="100" viewBox="-50 -50 100 100">
+							<circle fill="#F26941" cx="50" cy="50" r="50"/>
+						</svg>
+						<svg class="u-borders" width="100" height="100" viewBox="-25 50 75 50">
+							<circle fill="#F26941" cx="50" cy="50" r="50"/>
+						</svg>
+						<pre><code class="language-html" data-trim>
 &lt;!-- Normal:   --&gt; <svg viewBox="0 0 100 100"></svg>
 &lt;!-- Larger:   --&gt; <svg viewBox="0 0 200 200"></svg>
 &lt;!-- Smaller:  --&gt; <svg viewBox="0 0 50 50"></svg>
 &lt;!-- Negative: --&gt; <svg viewBox="-50 -50 100 100"></svg>
 &lt;!-- Mixed:    --&gt; <svg viewBox="-25 50 75 50"></svg>
-					</code></pre>
-				</section>
+						</code></pre>
+					</section>
 
-				<section>
-					<h3>Optional: Dimensions</h3>
-					<p>
-						<small>By default, SVGs will attempt to fill their container regardless of <code>viewBox</code>. You can specify dimensions to make the asset behave more like an <code>img</code> would.</small>
-					</p>
-					<pre><code class="language-html" data-trim>
-<svg width="100" height="100" viewBox="0 0 100 100"></svg>
-					</code></pre>
-				</section>
+					<section>
+						<h3>Optional: Dimensions</h3>
+						<p>
+							<small>By default, SVGs will attempt to fill their container regardless of <code>viewBox</code>. You can specify dimensions to make the asset behave more like an <code>img</code> would.</small>
+						</p>
+						<pre><code class="language-html" data-trim>
+	<svg width="100" height="100" viewBox="0 0 100 100"></svg>
+						</code></pre>
+					</section>
 
-				<section>
-					<h3>Optional: preserveAspectRatio</h3>
-					<p>
-						<small>Tells the browser how to handle dimensions that contradict <code>viewBox</code>.</small>
-					</p>
-					<svg class="u-borders" width="100" height="200" viewBox="0 0 100 100">
-						<circle fill="#F26941" cx="50" cy="50" r="50"/>
-					</svg>
-					<svg class="u-borders" width="100" height="200" viewBox="0 0 100 100" preserveAspectRatio="none">
-						<circle fill="#F26941" cx="50" cy="50" r="50"/>
-					</svg>
-					<svg class="u-borders" width="100" height="200" viewBox="0 0 100 100" preserveAspectRatio="xMidYMin">
-						<circle fill="#F26941" cx="50" cy="50" r="50"/>
-					</svg>
-					<svg class="u-borders" width="100" height="200" viewBox="0 0 100 100" preserveAspectRatio="xMidYMax">
-						<circle fill="#F26941" cx="50" cy="50" r="50"/>
-					</svg>
-					<svg class="u-borders" width="100" height="200" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid slice">
-						<circle fill="#F26941" cx="50" cy="50" r="50"/>
-					</svg>
-					<pre><code class="language-html" data-trim>
+					<section>
+						<h3>Optional: preserveAspectRatio</h3>
+						<p>
+							<small>Tells the browser how to handle dimensions that contradict <code>viewBox</code>.</small>
+						</p>
+						<svg class="u-borders" width="100" height="200" viewBox="0 0 100 100">
+							<circle fill="#F26941" cx="50" cy="50" r="50"/>
+						</svg>
+						<svg class="u-borders" width="100" height="200" viewBox="0 0 100 100" preserveAspectRatio="none">
+							<circle fill="#F26941" cx="50" cy="50" r="50"/>
+						</svg>
+						<svg class="u-borders" width="100" height="200" viewBox="0 0 100 100" preserveAspectRatio="xMidYMin">
+							<circle fill="#F26941" cx="50" cy="50" r="50"/>
+						</svg>
+						<svg class="u-borders" width="100" height="200" viewBox="0 0 100 100" preserveAspectRatio="xMidYMax">
+							<circle fill="#F26941" cx="50" cy="50" r="50"/>
+						</svg>
+						<svg class="u-borders" width="100" height="200" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid slice">
+							<circle fill="#F26941" cx="50" cy="50" r="50"/>
+						</svg>
+						<pre><code class="language-html" data-trim>
 <svg></svg>
 <svg preserveAspectRatio="none"></svg>
 <svg preserveAspectRatio="xMidYMin"></svg>
 <svg preserveAspectRatio="xMidYMax"></svg>
 <svg preserveAspectRatio="xMidYMid slice"></svg>
-					</code></pre>
-					<p>
-						<small>
-							More examples:
-							<a href="https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/preserveAspectRatio" target="_blank">
-								preserveAspectRatio on MDN &rarr;
-							</a>
-						</small>
-					</p>
+						</code></pre>
+						<p>
+							<small>
+								More examples:
+								<a href="https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/preserveAspectRatio" target="_blank">
+									preserveAspectRatio on MDN &rarr;
+								</a>
+							</small>
+						</p>
+					</section>
 				</section>
 
 				<section>
