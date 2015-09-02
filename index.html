@@ -311,29 +311,92 @@
 				</section>
 
 				<section>
-					<h3>Re-usable elements</h3>
-					<svg width="690" height="150" viewBox="0 0 460 100">
-						<circle id="repeat-me" cx="50" cy="50" r="50"/>
-						<use xlink:href="#repeat-me" fill="#0F1C3F" x="120"/>
-						<use xlink:href="#repeat-me" fill="#5A7BDD" x="240"/>
-						<use xlink:href="#repeat-me" fill="#F26941" x="360"/>
-					</svg>
-					<pre><code class="language-html" data-trim>
-&lt;svg viewBox="0 0 460 100"&gt;
-  &lt;circle id="repeat-me" cx="50" cy="50" r="50"/&gt;
-  &lt;use xlink:href="#repeat-me" fill="#0F1C3F" x="120"/&gt;
-  &lt;use xlink:href="#repeat-me" fill="#5A7BDD" x="240"/&gt;
-  &lt;use xlink:href="#repeat-me" fill="#F26941" x="360"/&gt;
+					<section>
+						<h3>Re-usable elements</h3>
+						<svg width="510" height="150" viewBox="0 0 340 100">
+							<circle id="orange-circle" fill="#F26941" cx="50" cy="50" r="50"/>
+							<use xlink:href="#orange-circle" x="120"/>
+							<use xlink:href="#orange-circle" x="240"/>
+						</svg>
+						<pre><code class="language-html" data-trim>
+&lt;svg viewBox="0 0 340 100"&gt;
+  &lt;circle id="orange-circle" fill="#F26941" cx="50" cy="50" r="50"/&gt;
+  &lt;use xlink:href="#orange-circle" x="120"/&gt;
+  &lt;use xlink:href="#orange-circle" x="240"/&gt;
 &lt;/svg&gt;
-					</code></pre>
-					<p>
-						<small>
-							Further reading:
-							<a href="http://sarasoueidan.com/blog/structuring-grouping-referencing-in-svg/" target="_blank">
-								Structuring, Grouping, and Referencing in SVG &rarr;
-							</a>
-						</small>
-					</p>
+						</code></pre>
+						<p>
+							<small>
+								Further reading:
+								<a href="http://sarasoueidan.com/blog/structuring-grouping-referencing-in-svg/" target="_blank">
+									Structuring, Grouping, and Referencing in SVG &rarr;
+								</a>
+							</small>
+						</p>
+					</section>
+
+					<section>
+						<h3>Defined elements for later use</h3>
+						<svg width="510" height="150" viewBox="0 0 340 100">
+							<defs>
+								<circle id="circle" cx="50" cy="50" r="50"/>
+							</defs>
+							<use xlink:href="#circle" fill="#0F1C3F" x="0" />
+							<use xlink:href="#circle" fill="#5A7BDD" x="120"/>
+							<use xlink:href="#circle" fill="#F26941" x="240"/>
+						</svg>
+						<pre><code class="language-html" data-trim>
+&lt;svg viewBox="0 0 340 100"&gt;
+  &lt;defs&gt;
+    &lt;circle id="circle" cx="50" cy="50" r="50"/&gt;
+  &lt;/defs&gt;
+  &lt;use xlink:href="#circle" fill="#0F1C3F" x="0" /&gt;
+  &lt;use xlink:href="#circle" fill="#5A7BDD" x="120"/&gt;
+  &lt;use xlink:href="#circle" fill="#F26941" x="240"/&gt;
+&lt;/svg&gt;
+						</code></pre>
+						<p>
+							<small>
+								Further reading:
+								<a href="http://sarasoueidan.com/blog/structuring-grouping-referencing-in-svg/" target="_blank">
+									Structuring, Grouping, and Referencing in SVG &rarr;
+								</a>
+							</small>
+						</p>
+					</section>
+
+					<section>
+						<h3>Symbols</h3>
+						<p>
+							<small>Re-usable groups with their own <code>viewBox</code> and <code>preserveAspectRatio</code> attributes.</small>
+						</p>
+						<svg width="510" height="150">
+							<symbol id="circle-symbol" viewBox="0 0 100 100">
+								<circle cx="50" cy="50" r="50"/>
+							</symbol>
+							<use xlink:href="#circle-symbol" width="50" x="60" fill="#0F1C3F"/>
+							<use xlink:href="#circle-symbol" width="100" x="205" fill="#5A7BDD"/>
+							<use xlink:href="#circle-symbol" width="150" x="360" fill="#F26941"/>
+						</svg>
+						<pre><code class="language-html" data-trim>
+&lt;svg width="510" height="150"&gt;
+  &lt;symbol id="circle-symbol" viewBox="0 0 100 100"&gt;
+    &lt;circle cx="50" cy="50" r="50"/&gt;
+  &lt;/symbol&gt;
+  &lt;use xlink:href="#circle-symbol" width="50" x="60" fill="#0F1C3F"/&gt;
+  &lt;use xlink:href="#circle-symbol" width="100" x="205" fill="#5A7BDD"/&gt;
+  &lt;use xlink:href="#circle-symbol" width="150" x="360" fill="#F26941"/&gt;
+&lt;/svg&gt;
+						</code></pre>
+						<p>
+							<small>
+								Further reading:
+								<a href="https://css-tricks.com/svg-symbol-good-choice-icons/" target="_blank">
+									SVG <code>symbol</code> a Good Choice for Icons &rarr;
+								</a>
+							</small>
+						</p>
+					</section>
 				</section>
 
 				<section>
