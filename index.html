@@ -497,13 +497,40 @@
 								</tr>
 								<tr>
 									<th scope="row">Fallback</th>
-									<td class="success"><code>&lt;image&gt;</code></td>
+									<td class="warning"><code>&lt;image&gt;</code></td>
 									<td class="success">Inner content</td>
 									<td class="success"><code>&lt;picture&gt;</code></td>
 									<td class="danger">JavaScript</td>
 								</tr>
 							</tbody>
 						</table>
+					</section>
+
+					<section>
+						<h3>Fallbacks</h3>
+						<pre><code class="language-html" data-trim>
+&lt;svg&gt;
+  &lt;!-- Older browsers render as img: --&gt;
+  &lt;image src="fallback.png" xlink:href="" width="100%"&gt;
+&lt;/svg&gt;
+
+&lt;object type="image/svg+xml" data="example.svg"&gt;
+  &lt;!-- Fallback content --&gt;
+&lt;/object&gt;
+
+&lt;picture&gt;
+  &lt;source type="image/svg+xml" srcset="example.svg"&gt;
+  &lt;img src="fallback.png"&gt;
+&lt;/picture&gt;
+						</code></pre>
+						<pre><code class="language-css" data-trim>
+.example {
+  background-image: url("fallback.png");
+}
+.svg .example { /* Modernizr */
+  background-image: url("example.svg");
+}
+						</code></pre>
 					</section>
 
 					<section>
