@@ -460,16 +460,8 @@
 							</filter>
 							<image id="image" xlink:href="http://placeimg.com/480/480/animals" height="480" width="480"/>
 							<mask id="mask" maskUnits="userSpaceOnUse" x="0" y="0" width="480" height="480">
-								<text x="240" y="240" text-anchor="middle" dominant-baseline="central" font-size="100" font-weight="bold" fill="white" style="text-transform:uppercase">
+								<text id="mask-text" x="240" y="240" text-anchor="middle" dominant-baseline="central" font-size="100" font-weight="bold" fill="white" style="text-transform:uppercase">
 									Animals!
-									<animateTransform
-										attributeName="transform"
-										attributeType="XML"
-										type="rotate"
-										from="0 240 240"
-										to="360 240 240"
-										dur="5s"
-										repeatCount="indefinite"/>
 								</text>
 							</mask>
 						</defs>
@@ -477,6 +469,15 @@
 						<rect x="-5" y="-5" width="490" height="490" fill="white" opacity="0.66"/>
 						<use xlink:href="#image" mask="url(#mask)"/>
 					</svg>
+					<script src="https://cdnjs.cloudflare.com/ajax/libs/snap.svg/0.3.0/snap.svg-min.js"></script>
+					<script>
+						var maskText = Snap(document.getElementById('mask-text'));
+						var rotateMaskText = function () {
+							maskText.attr({ transform: "r" + [0, 240, 240] });
+							maskText.animate({ transform: "r" + [360, 240, 240] }, 5000, rotateMaskText);
+						};
+						rotateMaskText();
+					</script>
 				</section>
 
 				<section>
