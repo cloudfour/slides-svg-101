@@ -533,7 +533,7 @@ body {
   border: 4px solid #5b6273; }
 
 .reveal table {
-  font-size: 30px; }
+  font-size: 24px; }
 
 .reveal table th {
   font-weight: normal; }
@@ -541,7 +541,7 @@ body {
 .reveal table th, .reveal table td {
   text-align: center;
   border-bottom: 0;
-  padding: 0.5em; }
+  padding: 0.375em 0.5em; }
 
 .reveal table thead th {
   border-bottom: 4px solid;

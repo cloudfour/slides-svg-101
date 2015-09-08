@@ -598,6 +598,113 @@
 					</section>
 
 					<section>
+						<h3>JavaScript Animation Libraries</h3>
+						<table>
+							<thead>
+								<tr>
+									<th></th>
+									<th scope="col">
+										<a href="http://greensock.com/gsap" target="_blank">
+											GSAP
+										</a>
+									</th>
+									<th scope="col">
+										<a href="http://snapsvg.io/" target="_blank">
+											Snap.svg
+										</a>
+									</th>
+									<th scope="col">
+										<a href="http://julian.com/research/velocity/" target="_blank">
+											Velocity.js
+										</a>
+									</th>
+									<th scope="col">
+										<a href="https://github.com/bendc/animateplus" target="_blank">
+											Animate Plus
+										</a>
+									</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<th scope="row">Drawing</th>
+									<td class="danger">No</td>
+									<td class="success">Yes</td>
+									<td class="danger">No</td>
+									<td class="danger">No</td>
+								</tr>
+								<tr>
+									<th scope="row"><code>points</code>, <code>d</code></th>
+									<td class="danger">No</td>
+									<td class="success">Yes</td>
+									<td class="danger">No</td>
+									<td class="warning">Absolute only</td>
+								</tr>
+								<tr>
+									<th scope="row">Percentage origins</th>
+									<td class="success">Yes</td>
+									<td class="danger">No</td>
+									<td class="danger">No</td>
+									<td class="danger">No</td>
+								</tr>
+								<tr>
+									<th scope="row">Sequences</th>
+									<td class="success">Timeline</td>
+									<td class="warning">Callbacks</td>
+									<td class="success">Queue</td>
+									<td class="warning">Callbacks</td>
+								</tr>
+								<tr>
+									<th scope="row">Loops</th>
+									<td class="success">Yes</td>
+									<td class="warning">Callbacks</td>
+									<td class="success">Yes</td>
+									<td class="success">Yes</td>
+								</tr>
+								<tr>
+									<th scope="row">More than SVG</th>
+									<td class="success">Yes</td>
+									<td class="danger">No</td>
+									<td class="success">Yes</td>
+									<td class="success">Yes</td>
+								</tr>
+								<tr>
+									<th scope="row">CommonJS</th>
+									<td class="danger">No</td>
+									<td class="danger">No</td>
+									<td class="success">Yes</td>
+									<td class="success">Yes</td>
+								</tr>
+								<tr>
+									<th scope="row">Sponsor</th>
+									<td>GreenSock, Inc.</td>
+									<td>Adobe</td>
+									<td>&mdash;</td>
+									<td>&mdash;</td>
+								</tr>
+								<tr>
+									<th scope="row">License</th>
+									<td>
+										<a href="http://greensock.com/standard-license" target="_blank">
+											Custom
+										</a>
+									</td>
+									<td>Apache</td>
+									<td>MIT</td>
+									<td>MIT</td>
+								</tr>
+								<tr>
+									<th scope="row">KB (minified)</th>
+									<td>&ge; 27 - 108</td>
+									<td>77</td>
+									<td>35</td>
+									<td>10</td>
+								</tr>
+							</tbody>
+						</table>
+					</section>
+
+					<section>
 						<h3>Some browser inconsistencies</h3>
 						<ul>
 							<li>
@@ -605,9 +712,6 @@
 							</li>
 							<li>
 								<p>IE does not support external content without <a href="https://github.com/jonathantneal/svg4everybody">a polyfill</a>.</p>
-							</li>
-							<li>
-								<p>Chrome <a href="https://groups.google.com/a/chromium.org/d/msg/blink-dev/5o0yiO440LM/59rZqirUQNwJ">intends to deprecate SMIL</a>. Microsoft <a href="https://dev.modern.ie/platform/status/svgsmilanimation/">does not currently plan support</a>.</p>
 							</li>
 							<li>
 								<p>Prior to Android 4.4, the default Android browser does not support masking.</p>
