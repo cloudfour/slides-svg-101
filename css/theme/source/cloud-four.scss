@@ -81,12 +81,28 @@ section.has-dark-background {
 	margin-left: 1em !important;
 }
 
+.u-marginRight {
+	margin-right: 1em !important;
+}
+
+.u-blockMargin {
+	margin: $blockMargin 0 !important;
+}
+
+.u-noMargins {
+	margin: 0 !important;
+}
+
 .u-textSuccess {
 	color: #4BBC86;
 }
 
 .u-textDanger {
 	color: #FF4136;
+}
+
+.u-textLeft {
+	text-align: left;
 }
 
 .u-borders {
