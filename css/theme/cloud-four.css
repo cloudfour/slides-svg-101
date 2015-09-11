@@ -573,3 +573,13 @@ body {
   background: rgba(255, 65, 54, 0.375); }
 .reveal table td.warning {
   background: rgba(255, 220, 0, 0.375); }
+
+.demo-icon {
+  width: 2em;
+  height: 2em;
+  position: relative;
+  vertical-align: middle !important;
+  top: -2px;
+  margin: 0;
+  display: inline-block;
+  line-height: 1; }
